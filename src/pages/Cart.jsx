@@ -9,9 +9,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { userRequest } from "../requestmethod";
 import { useHistory } from "react-router-dom";
-
-const KEY = "pk_test_51LLbeoLFtkAJ3WBRyRoPoYOZleZ6l4lD9DUBD0Dm8Nm3CzYJMtevoJWSh78nlxfhgbmU3OKZptp7EMnh3QewkvHN00AUx7mCqE";
-
+// add your stripe key
+const KEY = ""
 const Container = styled.div``;
 
 const Wrapper = styled.div`
@@ -237,7 +236,7 @@ const Cart = () => {
               <SummaryItemPrice>$ 80</SummaryItemPrice>
             </SummaryItem>
             <StripeCheckout
-              name="Lama Shop"
+              name="Saint Shop"
               image="https://avatars.githubusercontent.com/u/1486366?v=4"
               billingAddress
               shippingAddress
